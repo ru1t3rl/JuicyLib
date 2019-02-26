@@ -1,0 +1,9 @@
+D:\Programming\JuicyLib\JuicyLib\bin\Debug\JuicyLib.dll
+D:\Programming\JuicyLib\JuicyLib\bin\Debug\JuicyLib.pdb
+D:\Programming\JuicyLib\JuicyLib\bin\Debug\Newtonsoft.Json.dll
+D:\Programming\JuicyLib\JuicyLib\bin\Debug\xNet.dll
+D:\Programming\JuicyLib\JuicyLib\obj\Debug\JuicyLib.csprojAssemblyReference.cache
+D:\Programming\JuicyLib\JuicyLib\obj\Debug\JuicyLib.csproj.CoreCompileInputs.cache
+D:\Programming\JuicyLib\JuicyLib\obj\Debug\JuicyLib.csproj.CopyComplete
+D:\Programming\JuicyLib\JuicyLib\obj\Debug\JuicyLib.dll
+D:\Programming\JuicyLib\JuicyLib\obj\Debug\JuicyLib.pdb
