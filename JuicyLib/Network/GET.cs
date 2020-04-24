@@ -7,6 +7,13 @@ namespace JuicyLib.Network
 {
     public static class GET
     {
+        /// <summary>
+        ///     Returns the page it's source as JSON
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="url">The websites url</param>
+        /// <param name="debug">If there are any errors write it to the console</param>
+        /// <returns></returns>
         public static T Json<T>(string url, bool debug = true) where T : new()
         {
             var data = string.Empty;
@@ -28,7 +35,7 @@ namespace JuicyLib.Network
                     }
                     catch
                     {
-                        System.Windows.Forms.MessageBox.Show(ex.Message);
+
                     }
                 }
 
@@ -36,6 +43,12 @@ namespace JuicyLib.Network
             }
         }
 
+        /// <summary>
+        ///     Get a page it's source code as a string async
+        /// </summary>
+        /// <param name="url">The websites url</param>
+        /// <param name="debug">If there are any errors write it to the console</param>
+        /// <returns></returns>
         public static async Task<string> StringAsync(string url, bool debug = true)
         {
             string data = "NULL";
@@ -58,7 +71,7 @@ namespace JuicyLib.Network
                         }
                         catch
                         {
-                            System.Windows.Forms.MessageBox.Show(ex.Message);
+                            //System.Windows.Forms.MessageBox.Show(ex.Message);
                         }
                     }
                 }
@@ -67,6 +80,12 @@ namespace JuicyLib.Network
             }
         }
 
+        /// <summary>
+        ///     Gets a page it's source code as a string
+        /// </summary>
+        /// <param name="url">The websites url</param>
+        /// <param name="debug">If there are any errors write it to the console</param>
+        /// <returns></returns>
         public static string String(string url, bool debug = true)
         {
             string data = "NULL";
@@ -89,7 +108,7 @@ namespace JuicyLib.Network
                         }
                         catch
                         {
-                            System.Windows.Forms.MessageBox.Show(ex.Message);
+                            // System.Windows.Forms.MessageBox.Show(ex.Message);
                         }
                     }
                 }
@@ -121,7 +140,7 @@ namespace JuicyLib.Network
                         }
                         catch
                         {
-                            System.Windows.Forms.MessageBox.Show(ex.Message);
+                            //System.Windows.Forms.MessageBox.Show(ex.Message);
                         }
                     }
                 }
@@ -151,7 +170,7 @@ namespace JuicyLib.Network
                     }
                     catch
                     {
-                        System.Windows.Forms.MessageBox.Show(ex.Message);
+                        //System.Windows.Forms.MessageBox.Show(ex.Message);
                     }
                 }
 
@@ -182,7 +201,7 @@ namespace JuicyLib.Network
                         }
                         catch
                         {
-                            System.Windows.Forms.MessageBox.Show(ex.Message);
+                            //System.Windows.Forms.MessageBox.Show(ex.Message);
                         }
                     }
                 }
@@ -212,7 +231,7 @@ namespace JuicyLib.Network
                     }
                     catch
                     {
-                        System.Windows.Forms.MessageBox.Show(ex.Message);
+                        //System.Windows.Forms.MessageBox.Show(ex.Message);
                     }
                 }
 

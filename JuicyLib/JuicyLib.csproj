@@ -69,6 +69,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConsoleAlert.cs" />
     <Compile Include="Network\Checker.cs" />
     <Compile Include="Network\Config.cs" />
     <Compile Include="Network\GET.cs" />
