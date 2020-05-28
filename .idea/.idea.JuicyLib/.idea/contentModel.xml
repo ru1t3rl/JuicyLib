@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="\192.168.2.10\Luca\Projects\Other\juicylib-master" t="IncludeFlat">
+      <e p="JuicyLib.sln" t="IncludeFlat" />
+    </e>
+    <e p="C:\Users\lucar\AppData\local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\lucar\AppData\local\JetBrains\Rider2020.1\resharper-host\temp\ReSharperHost\v201\TempCaches\Solution.00" t="ExcludeRecursive" />
+  </component>
+</project>

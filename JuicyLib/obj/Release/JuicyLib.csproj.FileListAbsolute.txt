@@ -33,3 +33,4 @@ D:\Documents\GitHub\private_checker\juicylib-master\JuicyLib\obj\Release\JuicyLi
 \\192.168.2.10\Luca\Projects\Other\juicylib-master\JuicyLib\obj\Release\JuicyLib.csproj.CopyComplete
 \\192.168.2.10\Luca\Projects\Other\juicylib-master\JuicyLib\obj\Release\JuicyLib.dll
 \\192.168.2.10\Luca\Projects\Other\juicylib-master\JuicyLib\obj\Release\JuicyLib.pdb
+\\192.168.2.10\Luca\Projects\Other\juicylib-master\JuicyLib\obj\Release\JuicyLib.csproj.CoreCompileInputs.cache

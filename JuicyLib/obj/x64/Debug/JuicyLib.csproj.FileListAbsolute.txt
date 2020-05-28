@@ -1,0 +1,2 @@
+\\192.168.2.10\Luca\Projects\Other\juicylib-master\JuicyLib\obj\x64\Debug\JuicyLib.csprojAssemblyReference.cache
+\\192.168.2.10\Luca\Projects\Other\juicylib-master\JuicyLib\obj\x64\Debug\JuicyLib.csproj.CoreCompileInputs.cache

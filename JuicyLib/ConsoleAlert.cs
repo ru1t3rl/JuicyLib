@@ -13,11 +13,19 @@ namespace JuicyLib
         /// </summary>
         /// <param name="message">The message to display.</param>
         /// <param name="waitForInput">Should wait for user input before continuing.</param>
-        public static void Show(string message, bool waitForInput = true)
+
+        static ConsoleColor warning = ConsoleColor.DarkYellow,
+            error = ConsoleColor.Red,
+            succes = ConsoleColor.Green,
+            defaultColor = ConsoleColor.White,
+            info = ConsoleColor.Cyan,
+            statusColor = ConsoleColor.Yellow;
+
+        public static void Show(string message, bool waitForInput = false)
         {
             ConsoleColor baseColor = Console.ForegroundColor;
 
-            Console.WriteLine($"\n{message}");
+            Console.WriteLine($"{message}");
 
             Console.ForegroundColor = baseColor;
 
@@ -28,23 +36,33 @@ namespace JuicyLib
             }
         }
 
-        public static void Show(string message, MessageType type, bool waitForInput = true)
+        public static void Show(string message, MessageType type, bool waitForInput = false)
         {
             ConsoleColor baseColor = Console.ForegroundColor;
             Console.ForegroundColor = type switch
             {
-                MessageType.Error => ConsoleColor.Red,
-                MessageType.Info => ConsoleColor.Cyan,
-                MessageType.Warning => ConsoleColor.DarkYellow
+                MessageType.Error => error,
+                MessageType.Info => info,
+                MessageType.Success => succes,
+                MessageType.Warning => warning,
+                MessageType.Status => statusColor
             };
 
-            Console.WriteLine($"\n{message}");
+            switch (type)
+            {
+                case MessageType.Error: Console.Write("[ERROR]  "); break;
+                case MessageType.Info: Console.Write("[INFO]   "); break;
+                case MessageType.Success: Console.Write("[SUCCESS]"); break;
+                case MessageType.Warning: Console.Write("[WARN]   "); break;
+                case MessageType.Status: Console.Write("[STATS]  "); break;
+            };
 
             Console.ForegroundColor = baseColor;
+            Console.WriteLine($"  {message}");
 
             if (waitForInput)
             {
-                Console.WriteLine("Press any key to continue...");
+                Console.Write("Press any key to continue...");
                 Console.ReadKey(false);
             }
         }
@@ -55,12 +73,12 @@ namespace JuicyLib
         /// <param name="message">The message to display.</param>
         /// <param name="color">The text color of the error message</param>
         /// <param name="waitForInput">Should wait for user input before continuing.</param>
-        public static void Show(string message, ConsoleColor color, bool waitForInput = true)
+        public static void Show(string message, ConsoleColor color, bool waitForInput = false)
         {
             ConsoleColor baseColor = Console.ForegroundColor;
             Console.ForegroundColor = color;
 
-            Console.WriteLine($"\n{message}");
+            Console.WriteLine($"{message}");
 
             Console.ForegroundColor = baseColor;
 
@@ -71,11 +89,20 @@ namespace JuicyLib
             }
         }
 
+        public static void SetWarningColor(ConsoleColor color) { warning = color; }
+        public static void SetErrorColor(ConsoleColor color) { error = color; }
+        public static void SetSuccesColor(ConsoleColor color) { succes = color; }
+        public static void SetDefaultColor(ConsoleColor color) { defaultColor = color; }
+        public static void SetInfoColor(ConsoleColor color) { defaultColor = color; }
+        public static void SetStatusColor(ConsoleColor color) { statusColor = color; }
+
         public enum MessageType
         {
             Warning,
             Error,
-            Info
+            Info,
+            Success,
+            Status
         }
     }
 }
