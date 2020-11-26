@@ -75,6 +75,19 @@
     <Compile Include="Network\Config.cs" />
     <Compile Include="Network\GET.cs" />
     <Compile Include="Network\POST.cs" />
+    <Compile Include="Network\RequestSystem\Activities\Activity.cs" />
+    <Compile Include="Network\RequestSystem\Activities\ActivityProfile.cs" />
+    <Compile Include="Network\RequestSystem\Activities\ActivityTypes.cs" />
+    <Compile Include="Network\RequestSystem\Activities\Checks\Capture.cs" />
+    <Compile Include="Network\RequestSystem\Activities\Checks\GetKey.cs" />
+    <Compile Include="Network\RequestSystem\Activities\Checks\KeyCheck.cs" />
+    <Compile Include="Network\RequestSystem\Activities\Checks\MatchRegex.cs" />
+    <Compile Include="Network\RequestSystem\Activities\Requests\Get.cs" />
+    <Compile Include="Network\RequestSystem\Activities\Requests\Post.cs" />
+    <Compile Include="Network\RequestSystem\Activities\Requests\Request.cs" />
+    <Compile Include="Network\RequestSystem\Activities\Result.cs" />
+    <Compile Include="Network\RequestSystem\Worker.cs" />
+    <Compile Include="Network\RequestSystem\Writer.cs" />
     <Compile Include="Unity\AudioVisualizer.cs" />
     <Compile Include="Unity\Movement.cs" />
     <Compile Include="StringMechanic\Files.cs" />
@@ -85,6 +98,7 @@
     <Compile Include="Unity\VectorMath.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
   </ItemGroup>
   <PropertyGroup>

@@ -3,7 +3,7 @@
 namespace JuicyLib.Unity.Audio
 {
     [RequireComponent(typeof(AudioSource))]
-    public class AudioVisualizer
+    public class AudioVisualizer : MonoBehaviour
     {
         public AudioSource _audioSource;
 

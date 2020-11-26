@@ -21,9 +21,12 @@ namespace JuicyLib
             info = ConsoleColor.Cyan,
             statusColor = ConsoleColor.Yellow;
 
+        public static bool shouldDisplayMessages = true;
+
         public static void Show(string message, bool waitForInput = false)
         {
             ConsoleColor baseColor = Console.ForegroundColor;
+            Console.ForegroundColor = defaultColor;
 
             Console.WriteLine($"{message}");
 
@@ -38,6 +41,9 @@ namespace JuicyLib
 
         public static void Show(string message, MessageType type, bool waitForInput = false)
         {
+            if (!shouldDisplayMessages)
+                return;
+
             ConsoleColor baseColor = Console.ForegroundColor;
             Console.ForegroundColor = type switch
             {
